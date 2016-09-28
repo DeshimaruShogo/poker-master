@@ -24,15 +24,15 @@ $filter = filter_input(INPUT_POST, 'flg');
         </div>
 
         <div class="stock">
-            <form method='post' name="flg">
+            <form method='post'>
                 <h2>↓カードを引くと↓</h2>
-                <input type="submit" value="" id="stockImage">
+                <input type="submit" value="" name="flg" id="stockImage">
                 <h2>↑プレイできます↑</h2>
             </form>
         </div>
 
         <div class="table">
-            <?php if ($_POST) : ?>
+            <?php if ($filter) : ?>
                 <?php foreach ($player_show_hand as $card) : // 手札の表示（あなた）?>
                     <img src="./image_trump/gif/<?php echo $card ?>.gif">
                 <?php endforeach; ?>
