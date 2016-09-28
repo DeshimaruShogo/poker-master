@@ -24,9 +24,9 @@
 
 <div class="stock">
     <form method='post'>
-        <h2>↓カードを引くと↓</h2>
+        <h2>↓カードを引くとooooo↓</h2>
         <input type="submit" value="" name="flg" id="stockImage">
-        <h2>↑プレイできます↑</h2>
+        <h2>↑プレイできますuuuuu↑</h2>
     </form>
 </div>
 
