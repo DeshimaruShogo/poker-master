@@ -67,4 +67,5 @@ h2 {
     background: url(../image_trump/gif/z02.gif) no-repeat;
     background-size: 90px 120px;
     cursor: pointer;
+    color: transparent;
 }
