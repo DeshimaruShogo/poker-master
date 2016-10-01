@@ -37,7 +37,7 @@ class Operate
         // if (!empty($_SESSION['rest'])) {
         //     $stock = $_SESSION['rest'];
         // }
-        if (!empty($rest) {
+        if (!empty($rest)) {
             $stock = $rest;
         }
 
