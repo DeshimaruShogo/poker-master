@@ -14,6 +14,7 @@ $filter = filter_input(INPUT_POST, 'flg');
     <body>
 
         <div class="table">
+            <?php if ($_POST) var_dump('post');exit; ?>
             <?php if ($filter) : ?>
                 <?php foreach ($enemy_show_hand as $card) : // 手札の表示（相手）?>
                     <img src="./image_trump/gif/<?php echo $card ?>.gif">
