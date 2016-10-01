@@ -18,7 +18,6 @@ $filter = filter_input(INPUT_POST, 'flg');
                 <?php foreach ($enemy_show_hand as $card) : // 手札の表示（相手）?>
                     <img src="./image_trump/gif/<?php echo $card ?>.gif">
                 <?php endforeach; ?>
-
                 <p>相手の役は<span><?php echo $enemy_yaku; ?></span>です。</p>
             <?php endif; ?>
         </div>
@@ -36,10 +35,8 @@ $filter = filter_input(INPUT_POST, 'flg');
                 <?php foreach ($player_show_hand as $card) : // 手札の表示（あなた）?>
                     <img src="./image_trump/gif/<?php echo $card ?>.gif">
                 <?php endforeach; ?>
-
                 <p>あなたの役は<span><?php echo $player_yaku; ?></span>です。</p>
             <?php endif; ?>
-            <?php if ($_POST) var_dump('post');exit; ?>
         </div>
 
     </body>
