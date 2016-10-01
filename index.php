@@ -26,7 +26,7 @@ $filter = filter_input(INPUT_POST, 'flg');
         <div class="stock">
             <form method='post'>
                 <h2>↓カードを引くと↓</h2>
-                <input type="submit" value="" name="flg" id="stockImage">
+                <input type="submit" name="flg" id="stockImage">
                 <h2>↑プレイできます↑</h2>
             </form>
         </div>
