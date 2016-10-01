@@ -34,8 +34,11 @@ class Operate
     public function getHand($stock)
     {
         // 山札の残りが保存されていれば、再使用する（１人目は通らない）
-        if (!empty($_SESSION['rest'])) {
-            $stock = $_SESSION['rest'];
+        // if (!empty($_SESSION['rest'])) {
+        //     $stock = $_SESSION['rest'];
+        // }
+        if (!empty($rest) {
+            $stock = $rest;
         }
 
         // 手札を配る
@@ -45,7 +48,8 @@ class Operate
         }
 
         // 山札の残りを保存
-        $_SESSION['rest'] = $stock;
+        // $_SESSION['rest'] = $stock;
+        $rest = $stock;
 
         return $hand;
     }
